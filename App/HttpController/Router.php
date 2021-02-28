@@ -54,5 +54,6 @@ class Router extends AbstractRouter
         $routeCollector->get('/example','/Trans/example');
         $routeCollector->get('/getter','/GetterSetter/getter');
         $routeCollector->get('/setter','/GetterSetter/setter');
+        $routeCollector->get('/invokeMethod','/Invoke/invokeMethod');
     }
 }
