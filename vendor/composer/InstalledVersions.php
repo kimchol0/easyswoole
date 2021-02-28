@@ -107,6 +107,15 @@ private static $installed = array (
       ),
       'reference' => '16c60dc31da7c6558c02f394d149ace2ad47453d',
     ),
+    'easyswoole/ddl' => 
+    array (
+      'pretty_version' => '1.0.9',
+      'version' => '1.0.9.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'efbe448b0befeb1348d37d9cbd841b5975754950',
+    ),
     'easyswoole/doctrine-annotations' => 
     array (
       'pretty_version' => '1.0.1',
@@ -124,6 +133,15 @@ private static $installed = array (
       array (
       ),
       'reference' => '0ba2c8bd46020192d8253f4b5e090321fae09ba1',
+    ),
+    'easyswoole/hot-reload' => 
+    array (
+      'pretty_version' => '0.1.2',
+      'version' => '0.1.2.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'c13a1222cec4e3c1df4c01ac51968cefe63dfc01',
     ),
     'easyswoole/http' => 
     array (
@@ -152,6 +170,24 @@ private static $installed = array (
       ),
       'reference' => 'b19fe14d8f5153f2c2e174400e21d644618eb49b',
     ),
+    'easyswoole/mysqli' => 
+    array (
+      'pretty_version' => '2.2.8',
+      'version' => '2.2.8.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '5c31dd1f7bb0e794b22df7ea117838d0ae46b1ba',
+    ),
+    'easyswoole/orm' => 
+    array (
+      'pretty_version' => '1.4.32',
+      'version' => '1.4.32.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'ff33acc6cc14227640705e6aa2931cf8896349ef',
+    ),
     'easyswoole/parsedown' => 
     array (
       'pretty_version' => '1.0.2',
@@ -160,6 +196,15 @@ private static $installed = array (
       array (
       ),
       'reference' => 'ec25cae8a6196016b643315b9c0dbda01716c4f7',
+    ),
+    'easyswoole/pool' => 
+    array (
+      'pretty_version' => '1.0.13',
+      'version' => '1.0.13.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'b65b7fa63e69ef8adcc60fa0736b06fa76f376b2',
     ),
     'easyswoole/session' => 
     array (

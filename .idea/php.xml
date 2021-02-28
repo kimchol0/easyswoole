@@ -26,6 +26,11 @@
       <path value="$PROJECT_DIR$/vendor/easyswoole/bridge" />
       <path value="$PROJECT_DIR$/vendor/easyswoole/annotation" />
       <path value="$PROJECT_DIR$/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/vendor/easyswoole/orm" />
+      <path value="$PROJECT_DIR$/vendor/easyswoole/mysqli" />
+      <path value="$PROJECT_DIR$/vendor/easyswoole/ddl" />
+      <path value="$PROJECT_DIR$/vendor/easyswoole/pool" />
+      <path value="$PROJECT_DIR$/vendor/easyswoole/hot-reload" />
     </include_path>
   </component>
 </project>

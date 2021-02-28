@@ -11,12 +11,17 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/easyswoole/command" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/easyswoole/component" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/easyswoole/config" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/easyswoole/ddl" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/easyswoole/doctrine-annotations" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/easyswoole/easyswoole" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/easyswoole/hot-reload" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/easyswoole/http" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/easyswoole/http-annotation" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/easyswoole/log" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/easyswoole/mysqli" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/easyswoole/orm" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/easyswoole/parsedown" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/easyswoole/pool" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/easyswoole/session" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/easyswoole/socket" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/easyswoole/spl" />
