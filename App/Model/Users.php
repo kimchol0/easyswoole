@@ -13,14 +13,14 @@ class Users extends AbstractModel
     protected $createTime = 'create_at';
     protected $updateTime = 'update_at';
 
-    public function schemaInfo(bool $isCache = true): Table
-    {
-        $table = new Table($this->tableName);
-        $table->colInt('id')->setIsPrimaryKey();
-        $table->colVarChar('name',255);
-        $table->colInt('age');
-        $table->colInt('create_at');
-        $table->colInt('update_at');
-        return $table;
-    }
+//    public function schemaInfo(bool $isCache = true): Table
+//    {
+//        $table = new Table($this->tableName);
+//        $table->colInt('id')->setIsPrimaryKey();
+//        $table->colVarChar('name',255);
+//        $table->colInt('age');
+//        $table->colInt('create_at');
+//        $table->colInt('update_at');
+//        return $table;
+//    }
 }
