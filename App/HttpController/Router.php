@@ -38,5 +38,9 @@ class Router extends AbstractRouter
         $routeCollector->get('/delById','/DB/delById');
         $routeCollector->get('/delByWhere','/DB/delByWhere');
         $routeCollector->get('/delAll','/DB/delAll');
+        $routeCollector->get('/updateOne','/DB/updateOne');
+        $routeCollector->get('/updateMulti','/DB/updateMulti');
+        $routeCollector->get('/updateFaster','/DB/updateFaster');
+        $routeCollector->get('/updateRows','/DB/updateRows');
     }
 }

@@ -10,6 +10,7 @@ use EasySwoole\Http\AbstractInterface\Controller;
 use EasySwoole\Mysqli\QueryBuilder;
 use EasySwoole\ORM\AbstractModel;
 use EasySwoole\ORM\Concern\Attribute;
+use http\Client\Curl\User;
 
 class DB extends Controller
 {
@@ -124,5 +125,48 @@ class DB extends Controller
         $res = $usersModel->destroy(null,true);
         $this->writeJson(200,$res);
     }
+    public function updateOne()
+    {
+        $user = Users::create()->get(17);
+        $user->name = 'one';
+        $res = $user->update();
+        $this->writeJson(200,$res);
+    }
+    public function updateMulti()//批量更新
+    {
+        $res = Users::create()->update(
+            [
+                'name'=>'multi'
+            ],
+            [
+                'id'=>['20','>']
+            ]
+        );
+        $this->writeJson(200,$res);
+    }
+    public function updateFaster() //凡是ID大于10的height字段都自增1
+    {
+        $res = Users::create()->update(
+            [
+                'height'=>QueryBuilder::inc(1)
+            ],
+            ['id'=>['10','>']]
+        );
+        $this->writeJson(200,$res);
+    }
 
+    public function updateRows()//凡是ID大于10的name全都改成rows
+    {
+        $users = Users::create();
+        $users->update(
+            [
+                'name'=>'rows'
+            ],
+            [
+                'id'=>['10','>']
+            ]
+        );
+        $res = $users->lastQueryResult()->getAffectedRows();
+        $this->writeJson(200,$res);
+    }
 }
