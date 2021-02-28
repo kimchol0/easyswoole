@@ -25,5 +25,6 @@ class Router extends AbstractRouter
             //不再进入控制器解析
         #    return false;
         $routeCollector->get('/test','/Hello/index/');
+        $routeCollector->get_browser('/async','/task/async');
     }
 }
