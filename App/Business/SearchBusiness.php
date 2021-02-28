@@ -37,7 +37,7 @@ class SearchBusiness
 
     public function testSelect()
     {
-        $res = $this->usersModel->select(['id'=>[1,'>']]); //查询ID大于1(不含1)的所有记录
+        $res = $this->usersModel->select(['id'=>[1,'>']]); //查询ID大于1(不含1)的所有记录(暂无法使用)
         return $res;
     }
 
@@ -70,15 +70,15 @@ class SearchBusiness
     public function testWhere()
     {
         $res = $this->usersModel::create()->select(function (QueryBuilder $queryBuilder){
-            $queryBuilder->where('id',2,'<>');//查询ID不等于2的
+            $queryBuilder->where('id',2,'<>');//查询ID不等于2的（暂无法使用）
         });
 
-        //$res = $this->usersModel::create()->where('id',2,'<>')->select();//查询ID不等于2的
+        //$res = $this->usersModel::create()->where('id',2,'<>')->select();//查询ID不等于2的（暂无法使用）
         return $res;
     }
     public function testPage()
     {
-        $res = $this->usersModel::create()->limit(0,2)->withTotalCount()->select();
+        $res = $this->usersModel::create()->limit(0,2)->withTotalCount()->select();//分页（暂无法使用）
         return $res;
     }
 
@@ -91,7 +91,7 @@ class SearchBusiness
     {
         return $this->usersModel::create()
             ->where('id=3 or id=1')
-            ->select();
+            ->select();//（暂无法使用）
     }
 
 
