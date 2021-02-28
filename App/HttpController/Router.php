@@ -33,5 +33,6 @@ class Router extends AbstractRouter
         $routeCollector->get('/search','/DB/search');
         $routeCollector->get('/quickSeaarch','/DB/quickSeaarch');
         $routeCollector->get('/specialSearch','/DB/specialSearch');
+        $routeCollector->get('/add1','/DB/add1');
     }
 }

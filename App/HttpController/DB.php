@@ -3,6 +3,7 @@
 
 namespace App\HttpController;
 
+use App\Business\AddBusiness;
 use App\Business\SearchBusiness;
 use App\Model\Users;
 use EasySwoole\Http\AbstractInterface\Controller;
@@ -83,4 +84,12 @@ class DB extends Controller
         $this->writeJson(200,$result);
     }
 
+    public function add1()
+    {
+        $AddBusiness = new AddBusiness();
+        //$result = $AddBusiness->add();//新增一条
+        //$result = $AddBusiness->createAdd();//数组方式create插入
+        //$result = $AddBusiness->dataadd();//数组方式data插入
+        $result = $AddBusiness->adds();//批量插入
+    }
 }
