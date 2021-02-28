@@ -26,5 +26,6 @@ class Router extends AbstractRouter
         #    return false;
         $routeCollector->get('/test','/Hello/index/');
         $routeCollector->get_browser('/async','/task/async');
+        $routeCollector->get_browser('/File','/File/');
     }
 }
