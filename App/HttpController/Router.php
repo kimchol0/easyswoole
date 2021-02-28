@@ -42,5 +42,8 @@ class Router extends AbstractRouter
         $routeCollector->get('/updateMulti','/DB/updateMulti');
         $routeCollector->get('/updateFaster','/DB/updateFaster');
         $routeCollector->get('/updateRows','/DB/updateRows');
+        $routeCollector->get('/modelResult','/Result/modelResult');
+        $routeCollector->get('/chainOperation','/Result/chainOperation');
+        $routeCollector->get('/lastSql','/Result/lastSql');
     }
 }
