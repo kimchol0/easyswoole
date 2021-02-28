@@ -46,5 +46,10 @@ class Router extends AbstractRouter
         $routeCollector->get('/chainOperation','/Result/chainOperation');
         $routeCollector->get('/lastSql','/Result/lastSql');
         $routeCollector->get('/externalConn','/ReadWriteSeparation/externalConn');
+        $routeCollector->get('/max','/Aggr/max');
+        $routeCollector->get('/min','/Aggr/min');
+        $routeCollector->get('/count','/Aggr/count');
+        $routeCollector->get('/avg','/Aggr/avg');
+        $routeCollector->get('/sum','/Aggr/sum');
     }
 }
