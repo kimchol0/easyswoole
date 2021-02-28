@@ -51,5 +51,6 @@ class Router extends AbstractRouter
         $routeCollector->get('/count','/Aggr/count');
         $routeCollector->get('/avg','/Aggr/avg');
         $routeCollector->get('/sum','/Aggr/sum');
+        $routeCollector->get('/example','/Trans/example');
     }
 }
