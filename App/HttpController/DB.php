@@ -7,6 +7,7 @@ use App\Business\AddBusiness;
 use App\Business\SearchBusiness;
 use App\Model\Users;
 use EasySwoole\Http\AbstractInterface\Controller;
+use EasySwoole\Mysqli\QueryBuilder;
 use EasySwoole\ORM\AbstractModel;
 use EasySwoole\ORM\Concern\Attribute;
 
@@ -92,4 +93,36 @@ class DB extends Controller
         //$result = $AddBusiness->dataadd();//数组方式data插入
         $result = $AddBusiness->adds();//批量插入
     }
+    public function delByModel()
+    {
+        $usersModel = new Users();
+        $user = $usersModel->get(1);
+        $res = $user->destroy();
+        $this->writeJson(200,$res);
+    }
+
+    public function delById()
+    {
+        $usersModel = new Users();
+        $res = $usersModel->destroy(2);
+        $this->writeJson(200,$res);
+    }
+
+    public function delByWhere()
+    {
+        $usersModel = new Users();
+        //$res = $usersModel->destroy(['id'>=3]);
+        //$res = $usersModel->where('id',4)->destroy();
+        $res = $usersModel->destroy(function (QueryBuilder $builder){
+            $builder->where('id',5);
+        });
+        $this->writeJson(200,$res);
+    }
+    public function delAll()
+    {
+        $usersModel = new Users();
+        $res = $usersModel->destroy(null,true);
+        $this->writeJson(200,$res);
+    }
+
 }
